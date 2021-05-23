@@ -47,7 +47,7 @@ Vue.use(amFormValidate)
 |validate|对整个表单进行校验的方法，参数为一个回调函数。该回调函数会在校验结束后被调用，并传入两个参数：是否校验成功和未通过校验的字段。|Function(callback: Function(boolean, array))|
 |validateField|对部分表单字段进行校验的方法，返回每个字段是否校验成功状态和相应字段及信息|Function(props: array \| string, callback: Function(errorMessage: object\|array))|
 |resetFields|对整个表单进行重置，将所有字段值重置为初始值并移除校验结果||
-|clearValidate|移除表单项的校验结果。传入待移除的表单项的 prop 属性或者 prop 组成的数组，如不传则移除整个表单的校验结果|Function(props: array \| string)|
+|clearValidate|移除表单项的校验结果。传入待移除的表单项的 prop 属性或者 prop 组成的数组。|Function(props: array \| string)|
 
 <br/>
 
